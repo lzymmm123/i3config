@@ -285,7 +285,8 @@ bar {
 	      urgent_workspace   $nord3 $nord15 
 
     }
-    status_command SCRIPT_DIR=~/.config/i3blocks i3blocks
+    #status_command SCRIPT_DIR=~/.config/i3blocks i3blocks
+    status_command i3status-rs ~/.config/i3/config.toml
         #i3bar i3status
 }
 
@@ -296,6 +297,8 @@ for_window [class="VirtualBox Machine"] floating enable
 for_window [instance="Telegram"] floating enable
 for_window [instance="wemeetapp"] floating enable
 for_window [class="mpv"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="Sxiv"] floating enable
 
 for_window [title="Picture-in-Picture"] sticky enable
 
